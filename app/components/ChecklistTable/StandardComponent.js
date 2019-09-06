@@ -15,7 +15,7 @@ class StandardComponent extends Component {
         const toRender = this.props.index === 0 ? 
             this.props.standard : 
             <tr>
-                <th style={{ width: '100px' }} scope="row">
+                <th style={{ width: '80px' }} scope="row">
                     <Input className="table-input" type="numeric" />
                 </th>
                 <td style={{ width: '100px' }}>{this.props.standard.standard}</td>
@@ -31,10 +31,10 @@ class StandardComponent extends Component {
                         }                        
                     </ol>
                 </td>
-                <td>
+                <td style={{ width: '300px' }}>
                     <Input className="table-input" type="textarea" />
                 </td>
-                <td style={{ width: '100px' }}>
+                <td style={{ width: '60px' }}>
                     {this.state.percentage}%
                 </td>
             </tr>

@@ -25,9 +25,19 @@ class SectionComplianceTable extends Component {
                         </tr>
 
                         {
+                            this.props.type === 'section' &&
                             consts.standards.map((standard, index) => {
                                 return(
-                                    <StandardComponent key={index} standard={standard} />
+                                    <StandardComponent type={'standard'} key={index} standard={standard} />
+                                )
+                            })
+                        }
+
+                        {
+                            this.props.type === 'control' &&
+                            consts.controls.map((control, index) => {
+                                return(
+                                    <StandardComponent type={'control'} key={index} standard={control} />
                                 )
                             })
                         }

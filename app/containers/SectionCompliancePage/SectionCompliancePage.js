@@ -13,7 +13,7 @@ class SectionCompliancePage extends Component {
     render = () => {
         return(
             <div className="wrapper center-aligning pd-10px">
-                <SectionComplianceTable />                
+                <SectionComplianceTable type={this.props.type || 'section'}/>                
             </div>
         )
     }

@@ -6,7 +6,7 @@ import HomePage from '../HomePage/index'
 import ChecklistPage from '../ChecklistPage/ChecklistPage'
 import SectionCompliancePage from '../SectionCompliancePage/SectionCompliancePage'
 
-import GlobalStyle from '../../global-styles'
+const ControlCompliancePage = (props) => { return( <SectionCompliancePage type='control' {...props} /> ) }
 
 export default function App() {
 	return (
@@ -17,6 +17,7 @@ export default function App() {
 					<Route exact path="/" component={HomePage} />
 					<Route exact path="/checklist" component={ChecklistPage} />
 					<Route exact path="/section-compliance" component={SectionCompliancePage} />
+					<Route exact path="/control-compliance" component={ControlCompliancePage} />
 					<Route component={HomePage} />
 				</Switch>			
 			</div>

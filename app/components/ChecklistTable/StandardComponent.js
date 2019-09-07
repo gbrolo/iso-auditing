@@ -10,8 +10,7 @@ class StandardComponent extends Component {
         }
     }
 
-    render = () => {
-        console.log('index', this.props.index)
+    render = () => {        
         const toRender = this.props.index === 0 ? 
             this.props.standard : 
             <tr>

@@ -600,5 +600,280 @@ export const checklistData = [
                 ]
             }
         ]
+    },
+    {
+        mainSection: 'A.14',
+        section: 'System acquisition, development and maintenance',
+        subSection: [
+            {
+                standard: 'A.14.1',
+                section: 'Security requirements of information systems',
+                standards: [
+                    { 
+                        standard: '	A.14.1.1', 
+                        section: 'Information security requirements analysis and specification', 
+                        points: ['Are information security requirements specified when new systems are introduced?', 'When systems are being enhanced or upgraded, are security requirements specified and addressed?'] 
+                    },
+                    { 
+                        standard: 'A.14.1.2', 
+                        section: 'Securing application services on public networks', 
+                        points: ['Do applications which send information over public networks appropriately protect the information against fraudulent activity, contract dispute, unauthorised discloser and unauthorised modification?'] 
+                    },
+                    { 
+                        standard: 'A.14.1.3', 
+                        section: 'Protecting application services transactions', 
+                        points: ['Are controls in place to prevent incomplete transmission, misrouting, unauthorised message alteration, unauthorised disclosure, unauthorised message duplication or replay attacks?'] 
+                    }
+                ]
+            },
+            {
+                standard: 'A.14.2',
+                section: 'Security in development and support processes',
+                standards: [
+                    { 
+                        standard: 'A.14.2.1', 
+                        section: 'Secure development policy', 
+                        points: ['Does the organisation develop software or systems? ', 'If so, are there policies mandating the implementation and assessment of security controls?'] 
+                    },
+                    { 
+                        standard: 'A.14.2.2', 
+                        section: 'System change control procedures', 
+                        points: ['Is there a formal change control process?'] 
+                    },
+                    { 
+                        standard: 'A.14.2.3', 
+                        section: 'Technical review of applications after operating platform changes', 
+                        points: ['Is there a process to ensure a technical review is carried out when operating platforms are changed?'] 
+                    },
+                    { 
+                        standard: 'A.14.2.4', 
+                        section: 'Restrictions on changes to software packages', 
+                        points: ['Is there a policy in place which mandates when and how software packages can be changed or modified?'] 
+                    },
+                    { 
+                        standard: 'A.14.2.5', 
+                        section: 'Secure system engineering principles', 
+                        points: ['Does the organisation have documented principles on how systems must be engineered to ensure security?'] 
+                    },
+                    { 
+                        standard: 'A.14.2.6', 
+                        section: 'Secure development environment', 
+                        points: ['Has a secure development environment been established? ', 'Do all projects utilise the secure development environment appropriately during the system development lifecycle?'] 
+                    },
+                    { 
+                        standard: 'A.14.2.7', 
+                        section: 'Outsourced development', 
+                        points: ['Where development has been outsourced is this supervised? ', 'Is externally developed code subject to a security review before deployment?'] 
+                    },
+                    { 
+                        standard: 'A.14.2.8', 
+                        section: 'System security testing', 
+                        points: ['Where systems or applications are developed, are they security tested as part of the development process?'] 
+                    },
+                    { 
+                        standard: 'A.14.2.9', 
+                        section: 'System acceptance testing', 
+                        points: ['Is there an established process to accept new systems / applications, or upgrades, into production use?'] 
+                    }
+                ]
+            },
+            {
+                standard: 'A.14.3',
+                section: 'Test data',
+                standards: [
+                    { 
+                        standard: 'A.14.3.1', 
+                        section: 'Protection of test data', 
+                        points: ['Is there a process for selecting test data? ', 'Is test data suitably protected?'] 
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        mainSection: 'A.15',
+        section: 'Supplier relationships',
+        subSection: [
+            {
+                standard: 'A.15.1',
+                section: 'Information security in supplier relationships',
+                standards: [
+                    { 
+                        standard: 'A.15.1.1', 
+                        section: 'Information security policy for supplier relationships', 
+                        points: ['Is information security included in contracts established with suppliers and service providers? ', 'Is there an organisation-wide risk management approach to supplier relationships?'] 
+                    },
+                    { 
+                        standard: 'A.15.1.2', 
+                        section: 'Addressing security within supplier agreements', 
+                        points: ['Are suppliers provided with documented security requirements? ', 'Is supplier access to information assets & infrastructure controlled and monitored?'] 
+                    },
+                    { 
+                        standard: 'A.15.1.3', 
+                        section: 'Information and communication technology supply chain', 
+                        points: ['Do supplier agreements include requirements to address information security within the service & product supply chain?'] 
+                    }
+                ]
+            },
+            {
+                standard: 'A.15.2',
+                section: 'Supplier service delivery management',
+                standards: [
+                    { 
+                        standard: 'A.15.2.1', 
+                        section: 'Monitoring and review of supplier services', 
+                        points: ['Are suppliers subject to regular review and audit?'] 
+                    },
+                    { 
+                        standard: 'A.15.2.2', 
+                        section: 'Managing changes to supplier services', 
+                        points: ['Are changes to the provision of services subject to a management process which includes security & risk assessment?'] 
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        mainSection: 'A.16',
+        section: 'Information security incident management',
+        subSection: [
+            {
+                standard: 'A.16.1',
+                section: 'Management of information security incidents and improvements',
+                standards: [
+                    { 
+                        standard: 'A.16.1.1', 
+                        section: 'Responsibilities and procedures', 
+                        points: ['Are management responsibilities clearly identified and documented in the incident management processes?'] 
+                    },
+                    { 
+                        standard: 'A.16.1.2', 
+                        section: 'Reporting information security events', 
+                        points: ['Is there a process for timely reporting of information security events? ', 'Is there a process for reviewing and acting on reported information security events?'] 
+                    },
+                    { 
+                        standard: 'A.16.1.3', 
+                        section: 'Reporting information security weaknesses', 
+                        points: ['Is there a process for reporting of identified information security weaknesses?', 'Is this process widely communicated?  ', 'Is there a process for reviewing and addressing reports in a timely manner?'] 
+                    },
+                    { 
+                        standard: 'A.16.1.4', 
+                        section: 'Assessment of and decision on information security events', 
+                        points: ['Is there a process to ensure information security events are properly assessed and classified?'] 
+                    },
+                    { 
+                        standard: 'A.16.1.5', 
+                        section: 'Response to information security incidents', 
+                        points: ['Is there an incident response process which reflects the classification and severity of information security incidents?'] 
+                    },
+                    { 
+                        standard: 'A.16.1.6', 
+                        section: 'Learning from information security incidents', 
+                        points: ['Is there a process or framework which allows the organisation to learn from information security incidents and reduce the impact / probability of future events?'] 
+                    },
+                    { 
+                        standard: 'A.16.1.7', 
+                        section: 'Collection of evidence', 
+                        points: ['Is there a forensic readiness policy? ', 'In the event of an information security incident is relevant data collected in a manner which allows it to be used as evidence?'] 
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        mainSection: 'A.17',
+        section: 'Information security aspects of business continuity management',
+        subSection: [
+            {
+                standard: 'A.17.1',
+                section: 'Information security continuity',
+                standards: [
+                    { 
+                        standard: 'A.17.1.1', 
+                        section: 'Planning information security continuity', 
+                        points: ["Is information security included in the organisation's continuity plans?"] 
+                    },
+                    { 
+                        standard: 'A.17.1.2', 
+                        section: 'Implementing information security continuity', 
+                        points: ["Does the organisation's information security function have documented, implemented and maintained processes to maintain continuity of service during an adverse situation?"] 
+                    },
+                    { 
+                        standard: 'A.17.1.3', 
+                        section: 'Verify, review and evaluate information security continuity', 
+                        points: ['Are continuity plans validated and verified at regular intervals?'] 
+                    }
+                ]
+            },
+            {
+                standard: 'A.17.2',
+                section: 'Redundancies',
+                standards: [
+                    { 
+                        standard: 'A.17.2.1', 
+                        section: 'Availability of information processing facilities', 
+                        points: ["Do information processing facilities have sufficient redundancy to meet the organisations availability requirements?"] 
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        mainSection: 'A.18',
+        section: 'Compliance',
+        subSection: [
+            {
+                standard: 'A.18.1',
+                section: 'Compliance with legal and contractual requirements',
+                standards: [
+                    { 
+                        standard: '	A.18.1.1', 
+                        section: 'Identification of applicable legislation and contractual requirements', 
+                        points: ["Has the organisation identified and documented all relevant legislative, regulatory or contractual requirements related to security? ", 'Is compliance documented?'] 
+                    },
+                    { 
+                        standard: 'A.18.1.2', 
+                        section: 'Intellectual property rights', 
+                        points: ["Does the organisation keep a record of all intellectual property rights and use of proprietary software products? ", 'Does the organisation monitor for the use of unlicensed software?'] 
+                    },
+                    { 
+                        standard: 'A.18.1.3', 
+                        section: 'Protection of records', 
+                        points: ['	Are records protected from loss, destruction, falsification and unauthorised access or release in accordance with legislative, regulatory, contractual and business requirements?'] 
+                    },
+                    { 
+                        standard: 'A.18.1.4', 
+                        section: 'Privacy and protection of personally identifiable information', 
+                        points: ['Is personal data identified and appropriately classified? ', 'Is personal data protected in accordance with relevant legislation?'] 
+                    },
+                    { 
+                        standard: 'A.18.1.5', 
+                        section: '	Regulation of cryptographic controls', 
+                        points: ['Are cryptographic controls protected in accordance with all relevant agreements, legislation and regulations?'] 
+                    }
+                ]
+            },
+            {
+                standard: 'A.18.2',
+                section: 'Information security reviews',
+                standards: [
+                    { 
+                        standard: 'A.18.2.1', 
+                        section: 'Independent review of information security', 
+                        points: ['Is the organisations approach to managing information security subject to regular independent review? ', 'Is the implementation of security controls subject to regular independent review?'] 
+                    },
+                    { 
+                        standard: 'A.18.2.2', 
+                        section: 'Compliance with security policies and standards', 
+                        points: ['Does the organisation instruct managers to regularly review compliance with policy and procedures within their area of responsibility?', 'Are records of these reviews maintained?'] 
+                    },
+                    { 
+                        standard: 'A.18.2.3', 
+                        section: 'Technical compliance review', 
+                        points: ['Does the organisation regularly conduct technical compliance reviews of its information systems?'] 
+                    }
+                ]
+            }
+        ]
     }
 ]

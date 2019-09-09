@@ -1,0 +1,5 @@
+export const CONFIG_HEADER_TITLE = 'New document configuration'
+export const LABEL_DOCUMENT_TITLE = 'New document filename:'
+export const LABEL_CLIENT_NAME = 'Audit made for client:'
+export const DESCRIPTION = 'Description of this auditing objectives:'
+export const BUTTON_TEXT = 'GENERATE NEW EMPTY CHECKLIST FILE'

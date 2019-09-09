@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Table, Input } from 'reactstrap'
+import { calculateControlCompliance } from '../../providers/Storage/storage';
 
 class StandardComponent extends Component {
     constructor(props) {
@@ -8,6 +9,12 @@ class StandardComponent extends Component {
         this.state = {
             percentage: 0
         }
+    }
+
+    componentDidMount = () => {
+        const percentage = calculateControlCompliance(this.props.standard.standard)
+
+        this.setState({ percentage })
     }
 
     render = () => {                

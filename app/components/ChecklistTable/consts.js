@@ -610,7 +610,7 @@ export const checklistData = [
                 section: 'Security requirements of information systems',
                 standards: [
                     { 
-                        standard: '	A.14.1.1', 
+                        standard: 'A.14.1.1', 
                         section: 'Information security requirements analysis and specification', 
                         points: ['Are information security requirements specified when new systems are introduced?', 'When systems are being enhanced or upgraded, are security requirements specified and addressed?'] 
                     },
@@ -827,7 +827,7 @@ export const checklistData = [
                 section: 'Compliance with legal and contractual requirements',
                 standards: [
                     { 
-                        standard: '	A.18.1.1', 
+                        standard: 'A.18.1.1', 
                         section: 'Identification of applicable legislation and contractual requirements', 
                         points: ["Has the organisation identified and documented all relevant legislative, regulatory or contractual requirements related to security? ", 'Is compliance documented?'] 
                     },

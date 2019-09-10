@@ -14,6 +14,10 @@ function createFileInLocalStorage(fileConfig) {
     localStorage.setItem('iso-data', JSON.stringify(file))
 }
 
+function saveToLocalStorageFromFileRead(fileContent) {
+    localStorage.setItem('iso-data', fileContent)
+}
+
 function retrieveFileInLocalStorage() {
     return JSON.parse(localStorage.getItem('iso-data'))
 }
@@ -53,10 +57,23 @@ function calculateControlCompliance(control) {
     return sum / totalElements
 }
 
+function verifyFileCreated(history) {
+    return new Promise((resolve, reject) => {
+        if (localStorage.getItem('iso-data') === null) {
+            history.push('/')
+            reject('File not created')
+        } else {
+            resolve('File created')
+        }
+    })
+}
+
 export {
     createFileInLocalStorage,
     retrieveFileInLocalStorage,
     saveDataForSubSubControl,
     getSubSubControl,
-    calculateControlCompliance
+    calculateControlCompliance,
+    saveToLocalStorageFromFileRead,
+    verifyFileCreated
 }

@@ -41,7 +41,14 @@ class ConfigComponent extends Component {
                     <Input onChange={(e) => this.editConfigProperty('description', e.target.value)} className='config-input config-textarea' id='doc_desc' type="textarea" />
                 </CardBody>
                 <CardFooter>
-                    <Button onClick={() => createFileInLocalStorage(fileConfig)} color='secondary' outline>{ consts.BUTTON_TEXT }</Button>
+                    {
+                        this.props.withRedirect &&
+                        <Button onClick={() => {createFileInLocalStorage(fileConfig); this.props.redirect()}} color='secondary' outline>{ consts.BUTTON_TEXT } AND GET STARTED!</Button>
+                    }
+                    {
+                        !this.props.withRedirect &&
+                        <Button onClick={() => createFileInLocalStorage(fileConfig)} color='secondary' outline>{ consts.BUTTON_TEXT }</Button>
+                    }
                 </CardFooter>
             </Card>
         )

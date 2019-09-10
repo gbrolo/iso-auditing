@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
-import './checklist.css'
-import ChecklistTable from '../../components/ChecklistTable/ChecklistTable'
 import { verifyFileCreated } from '../../providers/Storage/storage';
 
-class ChecklistPage extends Component {
+class AboutPage extends Component {
     constructor(props) {
         super(props)
 
@@ -22,14 +20,14 @@ class ChecklistPage extends Component {
 
     render = () => {
         return(
-            <div className="wrapper center-aligning pd-10px">
+            <div className='wrapper center-aligning pd-10px'>
                 {
-					this.state.verifiedLoad &&					
-                    <ChecklistTable />
+					this.state.verifiedLoad &&
+					<div>About</div>
 				}
             </div>
         )
     }
 }
 
-export default ChecklistPage
+export default AboutPage

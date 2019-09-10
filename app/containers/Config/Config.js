@@ -1,14 +1,16 @@
 import React, { Component } from 'react'
 import { Nav, NavItem, NavLink, TabContent, TabPane } from 'reactstrap'
 import ConfigComponent from '../../components/ConfigComponent/ConfigComponent';
-import { retrieveFileInLocalStorage } from '../../providers/Storage/storage';
+import { retrieveFileInLocalStorage, verifyFileCreated } from '../../providers/Storage/storage';
+import SaveFileComponent from '../../components/SaveFileComponent/SaveFileComponent';
 
 class Config extends Component {
     constructor(props) {
         super(props)
 
         this.state = {
-            activeTab: '1'
+            activeTab: '1',
+            verifiedLoad: false
         }
     }
 
@@ -18,25 +20,39 @@ class Config extends Component {
         }
     }
 
+    componentDidMount = () => {        
+		verifyFileCreated(this.props.history).then(
+			this.setState({ verifiedLoad: true })
+		).catch(error => {
+			this.setState({ verifiedLoad: false })
+		})
+	}
+
     render = () => {
         return(
             <div className="wrapper center-aligning pd-10px">
-                <Nav tabs>
-                    <NavItem>
-                        <NavLink onClick={() => { this.toggle('1') }}>Create document</NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink onClick={() => { this.toggle('2') }}>Save and Load document</NavLink>
-                    </NavItem>
-                </Nav>
-                <TabContent activeTab={this.state.activeTab}>
-                    <TabPane tabId="1">
-                        <ConfigComponent />
-                    </TabPane>
-                    <TabPane tabId="2">
-                        
-                    </TabPane>
-                </TabContent>
+                {
+					this.state.verifiedLoad &&
+					<div>
+                        <Nav tabs>
+                            <NavItem>
+                                <NavLink onClick={() => { this.toggle('1') }}>Create document</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink onClick={() => { this.toggle('2') }}>Save and Load document</NavLink>
+                            </NavItem>
+                        </Nav>
+                        <TabContent activeTab={this.state.activeTab}>
+                            <TabPane tabId="1">
+                                <ConfigComponent />
+                            </TabPane>
+                            <TabPane tabId="2">
+                                <SaveFileComponent type={'save'}/>
+                                <SaveFileComponent type={'load'} />
+                            </TabPane>
+                        </TabContent>
+                    </div>
+				}                
             </div>
         )
     }

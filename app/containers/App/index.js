@@ -7,6 +7,7 @@ import ChecklistPage from '../ChecklistPage/ChecklistPage'
 import SectionCompliancePage from '../SectionCompliancePage/SectionCompliancePage'
 import ConfigPage from '../Config/Config'
 import DashboardPage from '../DashboardPage/DashboardPage'
+import AboutPage from '../AboutPage/AboutPage'
 
 const ControlCompliancePage = (props) => { return( <SectionCompliancePage type='control' {...props} /> ) }
 
@@ -17,6 +18,7 @@ export default function App() {
 			<div style={{ marginLeft: 55, padding: 55 }}>
 				<Switch>
 					<Route exact path="/" component={HomePage} />
+					<Route exact path="/about" component={AboutPage} />
 					<Route exact path="/config" component={ConfigPage} />
 					<Route exact path="/dashboard" component={DashboardPage} />
 					<Route exact path="/checklist" component={ChecklistPage} />

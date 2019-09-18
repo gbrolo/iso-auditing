@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin&display=swap');
+
+.font-family {
+    font-family: 'Cabin', sans-serif;
+}
+
 .sidebar-container-open {
     position: fixed;
     left: 0;

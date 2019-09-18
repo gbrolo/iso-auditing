@@ -69,7 +69,7 @@ class BarChartComponent extends Component {
         const { data, selectedData, selectedControl } = this.state             
         return(
             <div className="wrapper center-aligning">
-                <p>Click on each bar to show each control compliance percentage</p>
+                <p className="font-family">Click on each bar to show each control compliance percentage</p>
                 <BarChart 
                     ylabel={data.yAxisLabel}
                     width={data.width}

@@ -28,28 +28,28 @@ class Sidebar extends Component {
                 {
                     showSideBar &&
                     <div>
-                        <div className='header flex-center'>
+                        <div className='header flex-center font-family'>
                         {this.props.history.location.pathname.substr(1).toUpperCase()}
                     </div>
                     {
                         open &&
                         <div className='sidebar-container-open'>                
-                            <div className='sidebar-option' onClick={() => this.props.history.push('/dashboard')}>
+                            <div className='sidebar-option font-family' onClick={() => this.props.history.push('/dashboard')}>
                                 <FaChartBar className="icon-separator-sidebar"/>Dashboard
                             </div>      
-                            <div className='sidebar-option' onClick={() => this.props.history.push('/checklist')}>
+                            <div className='sidebar-option font-family' onClick={() => this.props.history.push('/checklist')}>
                                 <FaClipboardCheck className="icon-separator-sidebar"/>Compliance Checklist
                             </div> 
-                            <div className='sidebar-option' onClick={() => this.props.history.push('/section-compliance')}>
+                            <div className='sidebar-option font-family' onClick={() => this.props.history.push('/section-compliance')}>
                                 <FaClipboardList className="icon-separator-sidebar"/>Compliance per Section
                             </div>   
-                            <div className='sidebar-option' onClick={() => this.props.history.push('/control-compliance')}>
+                            <div className='sidebar-option font-family' onClick={() => this.props.history.push('/control-compliance')}>
                                 <FaListOl className="icon-separator-sidebar"/>Compliance per Control
                             </div>   
-                            <div className='sidebar-option' onClick={() => this.props.history.push('/about')}>
+                            <div className='sidebar-option font-family' onClick={() => this.props.history.push('/about')}>
                                 <FaInfo className="icon-separator-sidebar"/>Information
                             </div>   
-                            <div className='sidebar-option' onClick={() => this.props.history.push('/config')}>
+                            <div className='sidebar-option font-family' onClick={() => this.props.history.push('/config')}>
                                 <FaCog className="icon-separator-sidebar"/>Configuration
                             </div>          
 
